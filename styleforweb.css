@@ -1,0 +1,13 @@
+body {
+    background-colour: #EEE;
+}
+
+#container {
+    background-colour: white;
+}
+
+#header {
+    background-colour: #228B22;
+    colour: white;
+    text align: center;
+}
