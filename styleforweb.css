@@ -1,13 +1,27 @@
 body {
-    background-colour: #EEE;
+   background-color: #EEE;
+   font-family: Helvetica, Arial, san-serif;
 }
 
-#container {
-    background-colour: white;
+a {
+   text-decoration: none;
+   color: blue;
+}
+
+h1, h2, h3 {
+   margin: 0;
 }
 
 #header {
-    background-colour: #228B22;
-    colour: white;
-    text align: center;
+   background-color: ##228B22;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+
+#container {
+   background-color: white;
+   width: 800px;
+   margin-left: auto;
+   margin-right: auto;
 }
