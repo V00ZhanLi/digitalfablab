@@ -27,10 +27,86 @@
     <h2>here you can see my progress of learning over the weeks</h2>
 <p><----<a href="websitecreation.html">click here for web creation</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="laser%20cutting.html">click here to see laser cutting</a>----></p>
         
+<p><mark><b><u>17 July 2020:</u></b></mark><br/> Todays lesson is about output devices, last time we learnt about input devices, now we learn about the devices that controls and moves things.</p>
+        <ol>
+<li>What are output devices? Output devices are components that moves or controls movement.</li>
+<li>Output devices are often called actuators.</li>
+<li>We use output devices to display information or move mechanisms.</li>
+        </ol>
+<p>We use computer processors to control actuators so that we can obtain output (display, movement, motion) precisely. This is efficient and we can get a precise control over these devices.</p>
+<p>We can also use computer processors to control the amount of energy supplied so we csn control speed or motion.</p>
+        <p>There are 3 types of output devices, they are:</p>
+        <ol>
+            <li><b>Displays:</b>Things that shows a display, like <b>LED displays</b>,<b>LCD displays</b>, or any other light devices. </li>
+            <li><b>Motors:</b>There are different types of motors, such as,<b>DC motors, that need speed control</b>,<b>servo motors</b> and <b>step up motors</b>.</li>
+            <li><b>Control of hight powered devices:</b>Things like <b>transistor drivers</b> and <b>relays</b>.</li>
+        </ol>
+<p>Output devices are usually slower to react than the signals sent by the computer processor, so we would need to insert a delay for the reaction time.</p>
+<p>These delays are usually too fast for us to be seen with our eyes, as our eyes only respond to anything slower than 1/30 second. Hence, we would see that the LED is always lit up, this is known as the Persistence of Vision.</p>
+<p>There are 3 types of methods for controlling output devices.</p>
+        <ol>
+            <li>continuously send output information</li>
+            <li>use a timer to send data, based on preset delay.</li>
+            <li>asks or wait for a signal from the output device before sending new data.</li>
+        </ol>
+<p>Types of outputs:</p>
+        <ul>
+            <li>LEDS</li>
+            <li>RGB LEDs</li>
+            <li>7 segment display</li>
+            <li>LCD display</li>
+            <li>neopixel LEDs</li>
+            <li>OLED</li>
+            <li>TFTP</li>
+            <li>DC motors</li>
+            <li>servo motors</li>
+            <li>stepper motors</li>
+        </ul>
 
         
+<p><mark><b><u>13 July 2020:</u></b></mark><br/> Today's lesson is about input devices, we learnt about the different other input devices and how to wire them to use.</p> 
+        <ol>
+<li>Firstly, what are input devices? Input devices are devices, modules, machines or subsystems that detects changes to the environment and send the information to other elctronics, usually a computer processor.</li>       
+<li>input devices are usually called sensors</li>
+<li>sensor readings are analog by nature.</li>
+        </ol>
+<p>There are 3 methods of how sensors receive or read information, all these methods are based on the availabilty of the information. The 3 methods are:</p>
+        <ol>
+<li><b>always available:</b>These type of data are always available, all it needs to do is to just read it, changes to the reading occurs very slowly, these types of data are like <b>temperature</b> and such.</li>
+<li><b>polling:</b>Processor has to keep on poll the sensor for information, the sensor will usually indicate whether there is new information through other signal or have a drastic change in the reading to indicate that there is new reading available. These are for devices like <b>switches</b>.</li>
+<li><b>triggering:</b>Triggers are signals that are used to initiate the reading. Firstly, a processor sends a signal to the sensor for data, then the sensor gathers information and then when ready, it sends reading back to the Processor. The Sensor may also indicate that data is ready to be read by sending back an 'acknowledge/Ready' signal. These are for sensors like <b>ultrsonic</b> sensors.</li>
+        </ol>
+<p>Sensors usually read 2 types of signals, digital and analog.</p>
+        <ul>
+            <li>Analog signals are the most common type of singals, examples of analog signals include temperature, light, heat, etc</li>
+            <li>The processor can only read digital signals, and for that we will need to use an analog/digital converter(ADC) to convert the analog reading to a digital value.</li>
+            <li>For digital signals, these sensors are configured as smart devices, with processing power.</li>
+            <li>The sensor itself converts the analog values into digital signal</li>
+            <li>The processor then needs to decode to understand the value.</li>
+        </ul>
+<p>Types of input devices: switches, temperature and humidity sensors, ultrasonic sensor</p>
+<p>switches:</p>
+        <ul>
+            <li>toggle switch</li>
+            <li>pushbutton switch</li>
+            <li>slide switch</li>
+            <li>touch capacitive switch</li>
+        </ul>
+<p>Temperture sensor:<br/>For this module we use DHT11 temperature and humidity sensor. Before using the sensor you will need to use the DHT11 library.</p>
+<p><mark><b><u>6 july 2020:</u></b></mark><br/> learn about analog io and input devices</p>
         
-<p><mark><b><u>22 June 2020:</u></b></mark><br/> Today our class started on arduino microcontrollers, arduino is not something new to me as I have did a little bit of it in year 1 as part of my IE module, however I was not very good in it because I did not catch most of what my lecturer taught, but all I know is that it is something you can programe and control somethings, hopefully by the end of this topic I would be more experienced and have better understanding in using an arduino board.</p>
+        
+<p><mark><b><u>3 July 2020:</u></b></mark><br/> learn about simple io interface</p>
+        
+        
+<p><mark><b><u>29 June 2020:</u></b></mark><br/> Today our class started on arduino microcontrollers, arduino is not something new to me as I have did a little bit of it in year 1 as part of my IE module, however I was not very good in it because I did not catch most of what my lecturer taught, but all I know is that it is something you can programe and control somethings, hopefully by the end of this topic I would be more experienced and have better understanding in using an arduino board.</p>
+        
+<p>So what is Arduino? Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing.</p>
+        
+<p>One website our lecturers introduced was thinkercad, in thinkercad, you can create 3d printing sketches and do simulations for electronics, you can also use it to test out arduino codes, just type in the arduino code or use blocks to do a command and you can test it, once the simulation is successful, you can copy the code you created with command blocks and  wire up the arduino, and you can programme it.</p>
+        
+        
+<p><mark><b><u>22 June 2020:</u></b></mark><br/> Today our class started on introduction to electronics. Having basic knowledge of electrnics as it helps in preventing short circuits and overflowing of current so as to not damage our devices.</p>
 
        
     
