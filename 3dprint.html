@@ -26,15 +26,118 @@
 <div id="main">
     <h2>here you can see my progress of learning over the weeks</h2>
 <p><----<a href="laser%20cutting.html">click here for laser cutting</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="2dimagerasterandvector.html">click here to see 2D raster and vector</a>----></p>
+        
+<p><mark><b><u>1 June 2020:</u></b></mark><br/>Today we learn about using the 3d printer finally, I have used one of the schools 3d printers before, which is the makerbot 2. Now in the labs, there are new 3D printers and below listed are all the 3D printers in school.</p>
+        <img src="images/printers.png" width="420"/>
+<p>There are 3 types of printers that uses 3 different ways to print out the product:</p>
+        <ol>
+            <li><b>FFF(fused filament fabrication)</b>: the printer heats up filament and deposited layer by layer.</li>
+            <li><b>SLA(stereolithography)</b>: Uses light and shine onto the resin to harden the layers by a photochemical process.</li>
+            <li><b>SLS(selective layer sintering)</b>: uses a laser as a power source to fuse/sinter powdered material to create a solid structure.</li>
+        </ol>
+<p>The type of printer we use in school are FFF, and for FFF there are two different types of 3D printers, there are cartesian type and delta type.</p>
+        <img src="images/delta%20vs%20cartesien.png" width="420"/>
+
+<p>Parts of the 3D printer:<br/> Below shows an image of a standard FFF 3D printer.</p>
+        <img src="images/parts%20of%20printer.jpg" width="420"/>
+<p>Somethings to take note for the 3d printers:
+    <ul>
+        <li>The hot end of the 3D printer is around 180C, it is very hot and can cause burns when in contact with.</li>
+        <li>for all the printers the school is using, the print bed is heated as to improve adhesion, the temperature is around 60C, you can burn your hand if you leave it there, and if you bump onto the print bed or if the bed is mis-aligned, the print will mess up and fail, so before printing, check the bed whether it is leveled and proper.</li>
+        <li>the filament roll should be free from any obstruction and able to roll out easily, and the feed must be constant and not blocked from anything.</li>
+    </ul>
+<p>There are 2 ways to get a 3D print file, either it is created by you using software like fusion 360 or downloaded from other websites like thingiverse.</p>
+<p>in CAD, once we got our model in our software, we need to find a common technique of representing the model. The two ways are STL and OBJ, since we are using fusion 360, we are using STL.</p>
+<P>>how to save a file in fusion 360 to STL?</P>
+        <ol>
+            <li>Go to the object browser, select the object, right click it and choose save as STL, you can save the file in any folder you want.</li>
+            <img src="images/stl.png"  width="300"/>
+            <li>Another way is to go to tools, selet make and choose 3D print, once you got the 3D print menu, select the object, tick the preview mesh box, set refinement to medium, in the output, untick the send to 3D print utility.</li>
+            <img src="images/menu.png"  width="300"/>
+            <img src="images/menu1.png"  width="300"/>
+        </ol>
+<p>For the 3D printer, there are some characteristics that can be tweaked to change the speed and quality for your prints</p>
+<p>The common characteristics that can be changed are:
+    <br/>layer height
+    <br/>wall thickness
+    <br/>bridging and overhangs
+    <br/>supports
+    <br/>bed adhesion
+    <br/>object orientation</p>
+<p><b>Layer height</b>:
+    <br/>layer height is the height of each printed layer, the thinner the height, the finer the print will be and with thinner layers, it would take longer to print.</p>
+       <img src="images/layers.png"  width="300"/> 
+<p><b>wall thickness</b>:
+    <br/>wall thickness is when you control the number of strands required to build the walls of the object. If the layer height is 0.2 mm, then a wall thickness of 1mm will require 5 strands laid side-by-side, the minimum thickness for the walls should be 0.8 mm, and the wall thickness affects the time needed to print and the strength of it.</p>
+        <img src="images/wall%20thick.png"  width="300"/>
+<p><b>infill percentage</b>:
+    <br/>infill percentage is about how much filling there is in the internal cavities, when there is more infill, the print would be stronger, but it would take longer to print. Typically the infill would be no more than 20% for our school.</p>
+        <img src="images/infill.png"  width="300"/>
+<p><b>platform adhesion</b>:
+    <br/>Sometimes when you want to print something, the print would not have a stable base at the bottom for it to stand properly and it might fall over, ruining your print, or it might not stick well despite the heated print bed, for that we need to add a base to help it adhere well.</p>
+        <ul>
+            <li>Skirts are used to provide an outline, it does not have adhesion.</li>
+            <li>Brims allow some adhesion to the print perimeter.</li>
+            <li>Rafts are full platforms on which the 3D print is placed, the print would be on the raft instead of the bed.</li>
+        </ul>
+        <img src="images/platform.png"  width="300"/>
+<p><b>object placement and orientation</b>:
+    <br/>In the 3D printer software, you can change the orientation of the print to increase the chance of success, it can improve adhesion and reduce the number of supports needed. you can use the Rotate feature to change the orientation, and  use the print on bed feature to ensure proper placement on the print bed.</p>
+        <img src="images/orient.png"  width="300"/>
+        
+<p><mark><b><u>29 May 2020:</u></b></mark><br/> We learn about some constraints of the 3D printer, in some prints, there are some constrains that needs to be taken note of so we can add supports onto it for the print to be successful.</p>
+<p>Some constraints consists of bridging and overhang.</p>
+        <ul>
+            <li>bridging:<br/>bridging means prints between 2 points that have no connection to each other. Normally, a 3D printer first prints the base layer, on which it builds up layer by layer. In contrast, there is no base layer between two points when bridging. Doing this would mean that it is printing on air. And there is a limit to how far it can go before it needs support.</li>
+            <li>overhang:<br/>overhangs are prints that are suspended in air in an angle, since 3D printers cannot print in air, it is very tricky to deal with it, most printers can handle at least 45 degrees of overhang.</li>
+        </ul>
+        <p><b>bridging&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overhang</b><br/><img src="images/overhang.png"  width="200"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/hang.png"  width="200"/></p>
+        
+        
 <p><mark><b><u>22 May 2020:</u></b></mark><br/> We learn how to create a cube and learn how to form the pieces of it and create the layout of the pieces to be sent to the laser cutter to cut out.</p>
-<p>Something we can do is to preset the parameters of the cube, this way, we just need to type in the name of the parameter when choosing the length and it will set it up</p>
-<p>First we create a sketch and draw out the base of the cube, we also choose to have a 3mm thickness to the pieces.</p>
-<p>Then we can create the other side of the cube by doing the same thing.</p>
-<p>we will now need to split the lower part of the side to form the tabs that will interlock with each other when we join the 2 pieces, we will split it to create 3 equal sized tabs by first drawing 3 lines.</p>
-<p>Secondly, using the combine function, we can combine the left and right tabs to the side part of the cube and that is how you create the interlocking tabs for the cube.</p>
-<p>Repeat the steps on creating a cube side and tabs until all sides of the cube is done and all sides have tabs.</p>
-<p>Once all sides of the cube have their tabs, create sketches for each side and save those sketches as dxf files.</p>       
-<p>After saving all sides, you can open a new project and import the dxf files and lay them out as the template to be sent to the laser cutter.</p>
+        
+<p>Something we can do is to preset the parameters of the cube, this way, we just need to type in the name of the parameter when choosing the length and it will set it up, using parameters has its advantages, it can automatically change your design's dimensions just by changing the parameter's value, making it more convinient.</p>
+      <img src="images/cubesteps1.png"  width="500"/>
+      <img src="images/cubesteps2.png"  width="500"/>
+<p>First we create a sketch and draw out the base of the cube, for the dimensions of the cube, all you need to do is to just type in the name for the sides and they will instantly fix it, we are going to do a 60x60x60 mm cube with a 3mm thickness.</p>
+      <img src="images/cubesteps3.png"  width="500"/>
+        <img src="images/cubesteps4.png"  width="500"/>
+<p>Then we can create the other side of the cube, we will create sketch on that plane then repeat the same steps to draw the sketch.</p>
+<p>we will now need to split the lower part of the side to form the tabs that will interlock with each other when we join the 2 pieces, we will split it to create 3 equal sized tabs by first drawing 3 rectangles at the bottom, then extrude the piece shape.</p>
+        <img src="images/cubesteps5.png"  width="500"/>
+        <img src="images/cubesteps6.png"  width="500"/>
+        <img src="images/cubesteps7.png"  width="500"/>
+<p>Secondly, using the combine function, we can combine the left and right tabs to the side of the cube and create the tabs, remember to <b>TICK THE KEEP BODIES BOX</b>, this way you can keep the parts and they wont be removed.</p>
+        <img src="images/cubesteps8.png"  width="500"/>
+        <img src="images/cubesteps9.png"  width="500"/>
+<p>Now using construct tools, offset the plane to the centre of the cube so we can later mirror the side to the opposite.</p>
+        <img src="images/cubesteps10.png"  width="500"/>
+<p>Now using the mirror function, mirror the side of the cube and repeat the combine step for the mirrored side and the other side is done.</p>
+        <img src="images/cubesteps11.png"  width="500"/>
+        <img src="images/cubesteps12.png"  width="500"/>
+        <img src="images/cubesteps13.png"  width="500"/>
+<p>Now you can repeat the same steps for all sides until a full cube is formed.</p>
+        <img src="images/cubesteps14.png"  width="200"/>
+        <img src="images/cubesteps15.png"  width="200"/>
+        <img src="images/cubesteps16.png"  width="200"/>
+        <img src="images/cubesteps17.png"  width="200"/>
+        <img src="images/cubesteps18.png"  width="200"/>
+        <img src="images/cubesteps19.png"  width="200"/>
+        <img src="images/cubesteps20.png"  width="200"/>
+        <img src="images/cubesteps21.png"  width="200"/>
+        <img src="images/cubesteps22.png"  width="200"/>
+        <img src="images/cubesteps23.png"  width="200"/>
+        <img src="images/cubesteps24.png"  width="200"/>
+        <img src="images/cubesteps25.png"  width="200"/>
+        <img src="images/cubesteps26.png"  width="200"/>
+        <img src="images/cubesteps27.png"  width="200"/>
+        <img src="images/cubesteps28.png"  width="200"/>
+        <img src="images/cubesteps29.png"  width="200"/>
+        <img src="images/cubesteps30.png"  width="400"/>
+<p>Then we would need to create new sketches of each side of the cube so we can save their shapes as dxf files for the laser cutter.</p>
+        <img src="images/cubesteps31.png"  width="420"/>
+        <img src="images/cubesteps32.png"  width="420"/>
+<p>Finally once all sides are saved as dxf files, you can use a vecter software like inkscape to lay them out and arrange them before saving all and use the file for laser cutting.</p>
         
         
         
