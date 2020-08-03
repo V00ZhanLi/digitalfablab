@@ -16,10 +16,10 @@
                     <li><a class="selected"href="index.html">home</a>
                     </li>
                     <li><a href="progress.html">progress</a></li>
+                    <li><a href="final%20project.html">final project</a></li>
                     <li><a href="fablab safety.html">fablab safety</a></li>
                     <li><a href="About me.html">about</a></li>
                     <li><a href="contact.html">contacts</a></li>
-                    
                 </ul>
 </div>
             
@@ -62,6 +62,32 @@
             <li>servo motors</li>
             <li>stepper motors</li>
         </ul>
+        <h3>Assignments</h3>
+<p>For this we will be wiring up some output devices, I will be wiring up a servo motor and LCD display with I2C interface.</p>
+<p>For the LCD display, it will be wired up as such:</p>
+        <img src="images/LCD.png" width="420"/>
+<p>For this we will need to download the LCD and the I2c module library, this is the link to download the libraries for the two of these----><a href="https://github.com/johnrickman/LiquidCrystal_I2C" target="_blank">LCD I2c</a></p>
+<p>Once downloaded, we can open one of their examples for the LCD. We can open their hello world example and change somethings to make it say something else.</p>
+<p>This is how the code looks like:</p>
+        <img src="images/LCD%20code.png" width="500"/>
+<p>This is the demo of the circuit set up:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M7wDwagdwss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Now it is the servo motor, for the servo motor, we will be using the FS90 servo motor.</p>
+<p>This is how the circuit looks like for the basic sweeping movement:</p>
+        <img src="images/servo.png" width="420"/>
+<p>In arduino there are servo examples, and it has examples for one that you can control with a variable resistor or one that moves it automatically in a sweeping motion. We will do the sweeping first.</p>
+<p>This is how the code looks like:</p>
+        <img src="images/servo%20sweep%20code.png" width="420"/>
+<p>This is the demo of the circuit set up:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/apEeSv8rmXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Now it is the second one, where you can use a variable resistor to control the angle you want the motor to stop at.</p>
+<p>This will be wired as such:</p>
+       <img src="images/knob.png" width="420"/>
+<p>For this there is also an example for it, it is named knob</p>
+<p>This is how the code look like:</p>
+        <img src="images/knob%20code.png" width="420"/>
+<p>This is the demo of the circuit set up:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HDCXYhvTPl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         
 <p><mark><b><u>13 July 2020:</u></b></mark><br/> Today's lesson is about input devices, we learnt about the different other input devices and how to wire them to use.</p> 
@@ -93,10 +119,69 @@
             <li>touch capacitive switch</li>
         </ul>
 <p>Temperture sensor:<br/>For this module we use DHT11 temperature and humidity sensor. Before using the sensor you will need to use the DHT11 library.</p>
-<p><mark><b><u>6 july 2020:</u></b></mark><br/> learn about analog io and input devices</p>
+<p>Ultrasonic sensor:<br/>For ultrasonic sensor, it measures thorugh ultrasonic waves, where it produces a wave and  receives an echo to detect the distance from the sensor to the closest thing.</p>
+        <h3>Assignment</h3>
+<p>We are going to be wiring up some input devices, which are the ultrasonic sensor and the DHT11 temperature and humidity sensor.</p>
+<p>For ultrasonic sensor, this is how the circuit is set up:</p>
+        <img src="images/ultrasonic.png" width="420"/>
+<p>The code I am using is from How To Mechatronics website, I will put a link to direct to the website to show his teaching on how the sensor and the code----><a href="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/" target="_blank">ultrasonic sensor tutorial</a></p>
+<p>This is a demo of the circuit set up:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JAwPfvZwOME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>For the temperature and humidity sensor, we are going to use a DHT11 sensor and will show how to set it up</p>
+<p>For the DHT11, this is how the circuit is set up:</p>
+        <img src="images/DHT.png" width="420"/>
+<p>The code I am using is by Pi BOTs makerhub, where he has a tutorial on this sensor in the arduino project hub. This is the link to the website in the arduino project hub----><a href="https://create.arduino.cc/projecthub/pibots555/how-to-connect-dht11-sensor-with-arduino-uno-f4d239#:~:text=The%20DHT11%20uses%20just%20one,the%20datasheet%20for%20more%20info)." target="_blank">DHT11 temperature and humidity sensor tutorial</a></p>
+<p>This is a demo of the circuit set up:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hsylXdfnprs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+<p><mark><b><u>6 july 2020:</u></b></mark><br/> Today we learn about analog io and input devices.</p>
+<h3>Assignment</h3>
+<p>This is for pushbutton with multiple states to control 3 LEDS. For the pushbutton,
+    <br/><b>On the first state, all LEDs are off.
+    <br/>On the second state, the red LED turns on.
+    <br/>On the third state, the yellow LED turns on.
+    <br/>On the third state, the green LED turns on.
+    <br/>On the fourth state, all LEDs turn on.
+    <br/>On this next state, the LEDs turn off and the cycle restarts.</b></p>
+<p>This is how the circuit will look like:</p>
+        <img src="images/state.png" width="420"/>
+<p>This is a video demo of the setup.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AOjUxm0tqds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+<p>For the deivce we are going to use for analog input device, we are going to use the LDR, light dependent resistor.</p>
+<p>This will be how the LDR will be set up:</p>
+        <img src="images/LDR.png" width="420"/>
+<p>The code that I will be as shown:</p>
+        <img src="images/LDR%20code.png" width="500"/>
+<p>This is a video that I took after uploading the code onto my arduino board.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qIBvGChBKiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         
-<p><mark><b><u>3 July 2020:</u></b></mark><br/> learn about simple io interface</p>
+        
+        
+<p><mark><b><u>3 July 2020:</u></b></mark><br/> Today is about basic programming lessons, for programming, we will need to use programming language, since microprocessors cannot understand normal languages, and they can only understand to binary code. Because of this, it is a need to translate or convert english like instructions to machine code, done by a complier.</p>
+<p>There are 2 different types of languages for programming:
+    <br/><b>high level languages</b> are computer languuages that resemble english, which is easy for us to understand but needs to be converted into binary.
+    <br/><b>low level languages</b> are computer languages that resemble computer like codes using mnemonics, they are very easy to convert to binary but it is extremely difficult to understand for us.</p>
+<p>Computer programming languages try to achieve a middle-ground where it can be understood by humans, but easily and accurately convertable. Examples include:</p>
+        <ul>
+            <li>python: very simple and english like, but needs high processing power.</li>
+            <li>c++: not very english like and pretty simple, but can be converted way easier.</li>
+        </ul>
+    <h3>errors in programming:</h3>
+    <p><b>synthax error:</b>when a line is not following the rules of programming, they are the easiest to spot and the most common error in programming.
+    <br/><b>logical errors:</b>errors made by the programmer in developing the logic of the program, things like incrementing instead of decrementing values, or using the wrong measurements llike using imperial instead of metric. They are the hardest to catch and is only done by testing the code throughly.
+    <br/><b>semantic errors:</b>improper use of program statements. Like using a loop that cannot be ended or using an incorrect function or statement. These are not easily identified and is extremely rare.</p>
+<h3>Structured programming</h3>
+        <p>In programming, structured programming is useful in developing our pragrams as it can reduces the occurance of logical errors. It is a technique tha specifies the way/method of writing code, which is easy to understand and follow and produces good results. It allows us to control the flow of execution and it documents our code which allows us to make it easier to check and understand.</p>
+        
+
+        
+        
+        
+        
+        
+        
         
         
 <p><mark><b><u>29 June 2020:</u></b></mark><br/> Today our class started on arduino microcontrollers, arduino is not something new to me as I have did a little bit of it in year 1 as part of my IE module, however I was not very good in it because I did not catch most of what my lecturer taught, but all I know is that it is something you can programe and control somethings, hopefully by the end of this topic I would be more experienced and have better understanding in using an arduino board.</p>
@@ -106,8 +191,44 @@
 <p>One website our lecturers introduced was thinkercad, in thinkercad, you can create 3d printing sketches and do simulations for electronics, you can also use it to test out arduino codes, just type in the arduino code or use blocks to do a command and you can test it, once the simulation is successful, you can copy the code you created with command blocks and  wire up the arduino, and you can programme it.</p>
         
         
+        
+        
+        
+        
+        
+        
 <p><mark><b><u>22 June 2020:</u></b></mark><br/> Today our class started on introduction to electronics. Having basic knowledge of electrnics as it helps in preventing short circuits and overflowing of current so as to not damage our devices.</p>
-
+<p>we would need to learn some definations first:</p>
+        <ul>
+            <li>current: the rate of charge passed per time, in seconds.</li>
+            <li>voltage/potential difference: the energy needed to carry each charge between 2 points.</li>
+            <li>resistance: Resistance is an electrical quantity that measures how the device or material reduces the electric current flow through it.</li>
+            <li>The SI unit of voltage is V(voltage), current is A(ampree) and resistance is (ohms).</li>
+        </ul>
+<h3>Formulas:</h3>
+        <ul>
+            <li>current=charge(Q)/time(s)</li>
+            <li>resistance=voltage(V)/current(A)</li>
+            <li>calculating resisitance:
+                <br/>In series: R=R1+R2+.....
+                <br/>In parallel: 1/R=1/R1+1/R2+....</li>
+            <li>All the resistance formulas are based on ohms law.</li>
+        </ul>
+<h3>somethings to take note in circuits:</h3>
+        <ul>
+            <li>Voltage on each branch in parallel circuits are equal</li>
+            <li>voltage in series circuits are separated among each components running through.</li>
+            <li>currrent in series circuits are equal among each components running through.</li>
+            <li>current in parellel circuits are separated among each branch.</li>
+        </ul>
+<h3>Kirchhoff's circuit laws:</h3>
+        <ol>
+            <li>At any junction, or node, in an electrical circuit, the sum of the currents flowing into the node is the sum of the currents flowing out of a node.<b>(curent/first law)</b></li>
+            <li>When the direction is taken into account, the sum of the potential differenes in any closed circuit is zero.<b>(loop/mesh/second law)</b></li>
+        </ol>
+<p>There are 2 different electrical currrents, alternating and direct current(AC and DC):
+    <br/><b>Alternating current</b> is when the voltage goes from positive to negative, alternating in time intervals.
+    <br/><b>Direct current</b> is when there is only one fixed voltage potential, which is either negative or positive.</p>
        
     
     
