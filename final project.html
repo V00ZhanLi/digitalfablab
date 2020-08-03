@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's time</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Final Project</h1>
+        </div>
+        <div id="contents">
+            <div id="nav">
+                <h3>navigation</h3>
+                <ul>
+                    <li><a class="selected"href="index.html">home</a>
+                    </li>
+                    <li><a href="progress.html">progress</a></li>
+                    <li><a href="final%20project.html">final project</a></li>
+                    <li><a href="fablab safety.html">fablab safety</a></li>
+                    <li><a href="About me.html">about</a></li>
+                    <li><a href="contact.html">contacts</a></li>
+                </ul>
+</div>
+            
+<div id="main">
+    <h2>Finally the time has come:</h2>
+<p>It is now almost reaching to the end of the semester, and that means projects, and this module is no exception, every single one of us are to create a finished product with what we learnt in this module, this would mean we would need to do CAD for 3D printing and laser cutting and use our microcontroller(arduino) to do something. And we will need to document our progress through the weeks until submission of finshed product</p>
+<p>for our finished product, we would need:</p>
+    <ul>
+        <li>Document our progress</li>
+        <li>Use computer aided design and/or digital graphics components (vector/raster)</li>
+        <li>3D printing</li>
+        <li>2D laser cutting and engraving</li>
+        <li>embedded control using a microcontroller with an input and an output.</li>
+    </ul>
+<p>We can get ideas for our project either from online, from what our lecturers have suggested, or from our own creative minds, but if we get our ideas online, we will need to change somethings from the original so as to not entirely copy from someone.</p>
+<p>My plan was to create a game, so I could carry it around and play with it, a small game console. I have some plans as to what game I want to do, and in the end i have decided to create tetris, an iconic game we played before, the reason why I decided to do this game because it involves planning in your gameplay, and I like games that require us to use our heads to think when we play.</p>
+<p>After doing some research, I realised someone has made a project for it too, and that would be the user BADFEED from arduino project hub, he has the plans for the components needed, and the code for the game. However, I have changed somethings from his code and project.</p>
+    <ul>
+        <li>In the original code, there was a buzzer wired to the arduino to play the tetris theme song, I have decided not to include that feature as it would be "too noisy".</li>
+        <li>BADFEED did not create an enclosure for the game, so I would 3D print somethings and laser cut out a case for it to fit properly and make it more organised instead of just wires sticking out around on an arduino board.</li>
+    </ul>
+<p>So lets start assembling the project! Here is the link to BADFEED's original project, should you want to see more: <a href="https://create.arduino.cc/projecthub/BADFEED/tetris-clone-with-oled-ssd1306-i2c-for-arduino-nano-uno-8d9395?ref=search&ref_id=ssd1306&offset=0" target="_blank">tiny tetris</a> </p>
+<p>here is the list of items you would need to get:</p>
+    <ol>
+        <li>0.96" SSD1306 OLED I2C interface (without it you wouldn't have a display!): 16 SGD</li>
+        <li>Arduino uno board (the controller of this entire project): 7 SGD</li>
+        <LI>5 Pushbuttons: 2.50 SGD</LI>
+        <li>Wires: 1 SGD</li>
+        <li>5 resistors (470, 330, 1k, 2k, 3.3k ohms): 25 cents</li>
+        <li>9v battery: 1.50 SGD</li>
+        <li>9v battery connecter: 40 cents</li>
+        <li>veroboard: 50 cents</li>
+    </ol>
+<p><b>Do keep in mind that all these items can vary in price depending on where you decide to buy them, all of these are bought from Sim Lim Tower but you can go online to buy them.</b></p>
+<p>Tools you would need are:</p>
+    <ol>
+        <li>soldering iron and solder</li>
+        <li>3D printer</li>
+        <li>laser cutter</li>
+    </ol>
+<p>First thing to do is to plan out what I am going to do for my project, I have sketched and written out the things needed to do all on a piece of paper, below is the picture of my planning.</p>
+    <img src="images/plans.png"  width="250" height="400"/>
+<p>Next thing would be to gather the materials, I have spent a day decided to travel to Sim Lim Tower to buy all the items I need, and after searching around the entire mall, I have gathered them all.</p>
+    
+<p>After gathering the materials, the first thing that would need to start to work on is the keypad because we need to do some soldering, I followed accordingly to how the kaypad looked like and took a day to solder everything and test if there are any open points to be fixed.</p>
+    <img src="images/keypad1%20(1).png"  width="250"/>
+    <img src="images/keypad1%20(2).png"  width="250"/>
+    <img src="images/keypad1%20(4).png"  width="250"/>
+    <img src="images/keypad1%20(3).png"  width="250"/>
+    
+<p>One tip to give is before soldering on the three wires for the keypad, make them longer than you need to, this way, you can cut off the excess instead of needing to join wires to make it longer.</p>
+<p>Next thing to solder will be the display holder, i choose to create a display holder because it saves space, unlike the jumper cables that could make the bottom taller and the jumper cables are very long and it would be messy to manage them, so if i make my own holder, I can control the wires better.</p>
+    <img src="images/holder%20(1).png"  width="250"/>
+    <img src="images/holder%20(2).png"  width="250"/>
+<p>After soldering the keypad and holder, the next thing would be to upload the code and test everything out. so I just plugged in my arduino uno and start to upload the code, however, there is an issue, there are cpp files that needs to be uploaded together with the main code, and since I never tried uploading cpp codes with arduino codes before, this was a new issue for me to deal with. But through research, I have found the way to upload cpp codes in arduino, the way to deal with it is to add all files into a folder, then when you open the .ino code, all the codes will be shown together, and now we can upload it into the arduino board.</p>
+<p>now at the bottom shows a demo of the project.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o5HP_7WgQ0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Now we need to think of a design for the enclosure for the project. from my deign, I planed to put the 9V battery at the back, then followed by the uno board, then the keypad and display.</p>
+    
+<p>Now we need to plan the things needed to laser cut and 3D print, the first thing to do will be to 3D print a battery holder and something to be placed in the middle of the uno board and the keypad and display to give them some space between each other. So I designed the middle piece shown below.</p>
+    <iframe src="https://myhub.autodesk360.com/ue2c03d16/shares/public/SH56a43QTfd62c1cd9685cd83f5ac610b554?mode=embed" width="500" height="340" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<p>I also designed buttons and got a 9V battery holder that needs to be printed.</p>
+    <iframe src="https://myhub.autodesk360.com/ue2c03d16/shares/public/SH56a43QTfd62c1cd96825ee3a7c8f884eab?mode=embed" width="500" height="340" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<p>For the 9V battery holder I found one very simple one on thingiverse, here is the link----><a href="https://www.thingiverse.com/thing:2144462" target="_blank">9V battery holder</a> </p></p>
+<p>Now that I have done all the 3D printing, I can care now about the laser cutting and completing the project.</p>
+
+     </div>
+</div>
+        
+<div id="footer">
+    Copyright &copy; 2020 voo zhan li
+        </div>
+    </body>
+</html>
